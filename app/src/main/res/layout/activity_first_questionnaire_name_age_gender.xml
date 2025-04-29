@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/first_questionnaire_name_age_gender_root"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="32dp"
+    android:orientation="vertical"
+    tools:context=".FirstQuestionnaireNameAgeGenderActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/first_questionnaire_name_age_gender_back_arrow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/first_questionnaire_arrow_back"
+            android:clickable="true"
+            android:focusable="true"
+            app:tint="?attr/colorOnBackground"
+            android:background="?attr/selectableItemBackgroundBorderless"/>
+        <TextView
+            android:id="@+id/first_questionnaire_name_age_gender_heading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="Sign-Up (2/8)"
+            android:textColor="?attr/colorOnBackground"
+            style="@style/Title" />
+    </RelativeLayout >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_marginTop="90dp"
+        android:layout_marginBottom="48dp"
+        android:text="Please fill the following fields."
+        android:textColor="?attr/colorOnBackground"
+        style="@style/Heading" />
+
+    <EditText
+        android:id="@+id/first_questionnaire_name_age_edit_name"
+        style="@style/TextInput"
+        android:layout_marginBottom="16dp"
+        android:hint="Your Original Name"
+        android:maxLength="32"
+        android:inputType="text"
+        android:maxLines="1"/>
+    <EditText
+        android:id="@+id/first_questionnaire_name_age_edit_age"
+        style="@style/TextInput"
+        android:layout_marginBottom="16dp"
+        android:hint="Age"
+        android:maxLength="32"
+        android:inputType="number"
+        android:maxLines="1"/>
+
+    <Spinner
+        android:id="@+id/first_questionnaire_name_age_gender_spinner_gender"
+        style="@style/Spinner"
+        android:layout_marginBottom="16dp"
+        android:entries="@array/first_questionnaire_gender_array"
+        android:spinnerMode="dropdown"/>
+    <Spinner
+        style="@style/Spinner"
+        android:id="@+id/first_questionnaire_name_age_gender_spinner_education_year"
+        android:entries="@array/first_questionnaire_education_year_array"
+        android:spinnerMode="dropdown" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="100dp" />
+
+    <Button
+        style="@style/PrimaryColorButton"
+        android:id="@+id/first_questionnaire_name_age_gender_continue"
+        android:text="Continue" />
+
+</LinearLayout>

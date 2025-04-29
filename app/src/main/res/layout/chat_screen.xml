@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/chat_main_screen"
+    android:background="#FFFDFB">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="#FEE8C4"
+        android:id="@+id/chat_header">
+        <ImageButton
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@drawable/back_arrow_chat_header"
+            android:id="@+id/chat_header_back_arrow"
+            android:layout_centerVertical="true">
+        </ImageButton>
+        <ImageView
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:src="@drawable/on_surface_profile_photo"
+            android:id="@+id/chat_header_profile_photo"
+            android:layout_toRightOf="@+id/chat_header_back_arrow"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="50dp">
+        </ImageView>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="serif"
+            android:textSize="25sp"
+            android:textColor="#725C39"
+            style="@style/Heading"
+            android:text="Black Dog"
+            android:id="@+id/chat_header_profile_name"
+            android:layout_toRightOf="@+id/chat_header_profile_photo"
+            android:layout_centerVertical="true"/>
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/results_icon"
+            android:id="@+id/chat_header_results"
+            android:layout_marginRight="10dp"
+            android:layout_toRightOf="@+id/chat_header_profile_name"
+            android:layout_centerVertical="true"
+            android:layout_alignParentEnd="true">
+        </ImageView>
+    </RelativeLayout>
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/bottomLayout"
+        android:layout_below="@+id/chat_header"/>
+
+    <LinearLayout
+        android:id="@+id/bottomLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        android:padding="8dp">
+
+        <EditText
+            android:id="@+id/messageEditText"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="Type a message"
+            android:inputType="text" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/sendButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:cornerRadius="10dp"
+            android:text="Send" />
+
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".FirstQuestionnaireCoursesActivity"
+
+    android:id="@+id/first_questionnaire_courses_root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="32dp"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/first_questionnaire_courses_back_arrow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/first_questionnaire_arrow_back"
+            android:clickable="true"
+            android:focusable="true"
+            app:tint="?attr/colorOnBackground"
+            android:background="?attr/selectableItemBackgroundBorderless"/>
+        <TextView
+            android:id="@+id/first_questionnaire_courses_heading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="Sign-Up (8/8)"
+            android:textColor="?attr/colorOnBackground"
+            style="@style/Title" />
+    </RelativeLayout >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginTop="90dp"
+        android:layout_marginBottom="48dp">
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="8dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Courses"
+                android:id="@+id/first_questionnaire_courses_txt"
+                android:textColor="?attr/colorOnBackground"
+                style="@style/Body" />
+            <ImageView
+                android:id="@+id/first_questionnaire_courses_help"
+                android:layout_alignTop="@+id/first_questionnaire_courses_txt"
+                android:layout_toEndOf="@id/first_questionnaire_courses_txt"
+                android:layout_width="16dp"
+                android:layout_height="16dp"
+                app:tint="?attr/colorOnBackground"
+                android:src="@drawable/help_outline" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="227dp"
+        android:layout_weight="0">
+
+        <com.google.android.flexbox.FlexboxLayout
+            android:id="@+id/first_questionnaire_courses_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:alignItems="center"
+            app:flexDirection="row"
+            app:flexWrap="wrap"
+            app:justifyContent="center">
+
+
+        </com.google.android.flexbox.FlexboxLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/first_questionnaire_courses_search"
+            android:layout_marginBottom="16dp"
+            android:inputType="text"
+            android:maxLines="1"
+            android:imeOptions="actionDone"
+            style="@style/TextInput"
+            android:hint="Type a course CRN here" />
+
+        <Button
+            style="@style/PrimaryColorButton"
+            android:id="@+id/first_questionnaire_courses_finish"
+            android:text="Finish" />
+    </LinearLayout>
+
+</LinearLayout>

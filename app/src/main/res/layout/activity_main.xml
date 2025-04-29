@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_gravity="center"
+    android:gravity="center"
+    android:padding="32dp"
+    android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="400dp"
+        android:layout_height="300dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/logo_coworking_illini"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Coworking Illini"
+        android:textAlignment="center"
+        style="@style/Supertitle"
+        android:textColor="?attr/colorOnBackground">
+    </TextView>
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="64dp" />
+
+    <Button
+        style="@style/PrimaryColorButton"
+        android:id="@+id/login"
+        android:layout_marginBottom="15dp"
+        android:text="Sign In Using SSO Verification" />
+    <Button
+        style="@style/PrimaryColorButton"
+        android:id="@+id/signup"
+        android:text="Sign Up" />
+
+</LinearLayout>

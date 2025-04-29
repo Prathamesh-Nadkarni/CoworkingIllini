@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Current colors -->
+    <color name="background">#FFFDFB</color>
+    <color name="colorOnBackground">#725C39</color>
+    <color name="colorSurface">#FEE8C4</color>
+    <color name="colorOnSurface">#725C39</color>
+    <color name="colorOnSurfaceVariant">#B19669</color>
+    <color name="colorPrimary">#FF9D00</color>
+    <color name="colorPrimaryVariant">#E4782F</color>
+    <color name="colorOnPrimary">#FFFFFF</color>
+    <color name="chip_stroke_color">#725C39</color>
+
+
+    <!-- Old, kept to prevent breaks -->
+    <color name="black">#191814</color>
+    <color name="beige">#f2d9ad</color>
+    <color name="yellow">#f7ad37</color>
+    <color name="orange">#e4782f</color>
+    <color name="blue">#292960</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="color1">#f2d9ad</color> <!--Beige, bg-->
+    <color name="color2">#292960</color> <!--Blue, buttons - important-->
+    <color name="color3">#e4782f</color> <!--Orange, buttons - unimportant-->
+    <color name="color4">#191814</color> <!--Black, text - TV-->
+    <color name="color5">#FFFFFFFF</color> <!--White, text - buttons-->
+</resources>

@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:gravity="center_vertical">
+        <!--android:background="@color/">-->
+
+        <!-- Question Text -->
+        <TextView
+            android:id="@+id/question_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="For this study session, which best describes your approach?"
+            android:textSize="18sp"
+            android:textColor="@color/black"
+            android:paddingBottom="16dp"
+            android:textStyle="bold"/>
+
+        <!-- Radio Group for Persona Selection -->
+        <RadioGroup
+            android:id="@+id/persona_radio_group"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginBottom="24dp">
+
+            <!-- Exam Prepper Option -->
+            <RadioButton
+                android:id="@+id/answer1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Exam Prepper: I’m here to focus and prepare efficiently."
+                android:textSize="16sp"
+                android:paddingBottom="8dp"
+                android:background="@drawable/radio_button_selector"/>
+
+            <!-- Struggler Option -->
+            <RadioButton
+                android:id="@+id/answer2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Struggler: Looking for extra help with challenging material."
+                android:textSize="16sp"
+                android:paddingBottom="8dp"
+                android:background="@drawable/radio_button_selector"/>
+
+            <!-- Answer Checker Option -->
+            <RadioButton
+                android:id="@+id/answer3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Answer Checker: I want to compare answers and check my understanding."
+                android:textSize="16sp"
+                android:paddingBottom="8dp"
+                android:background="@drawable/radio_button_selector"/>
+        </RadioGroup>
+
+        <!-- Previous and Next Buttons -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <!-- Previous Button -->
+            <Button
+                android:id="@+id/button_previous"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Previous"
+                android:textColor="#FFFFFF"
+                android:layout_marginEnd="150dp"/>
+
+            <!-- Next Button -->
+            <Button
+                android:id="@+id/button_next"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Next"
+                android:textColor="#FFFFFF"
+                android:padding="8dp"/>
+
+        </LinearLayout>
+    </LinearLayout>

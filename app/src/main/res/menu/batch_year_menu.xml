@@ -1,0 +1,9 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:title="Freshman" />
+    <item android:title="Sophomore" />
+    <item android:title="Junior" />
+    <item android:title="Senior" />
+    <item android:title="Graduate Student" />
+    <item android:title="PhD Student" />
+    <item android:title="Postdoc Student" />
+</menu>

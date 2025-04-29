@@ -1,0 +1,67 @@
+<com.google.android.material.card.MaterialCardView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardBackgroundColor="#FEE8C4"
+    app:strokeWidth="0dp"
+    android:id="@+id/profile_card_1"
+    android:layout_marginTop="15dp"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:id="@+id/profile_card_1_demographic">
+            <ImageView
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:src="@drawable/profile_icon_on_card"
+                android:id="@+id/profile_card_1_photo"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Black Dog"
+                style="@style/Body"
+                android:id="@+id/matchname"
+                android:layout_marginLeft="10dp"
+                android:textColor="#725C39"/>
+        </LinearLayout>
+        <com.google.android.material.chip.ChipGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:chipSpacing="2dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="5dp">
+            <com.google.android.material.chip.Chip
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:chipStrokeColor="#725C39"
+                app:chipStrokeWidth="1dp"
+                app:chipStartPadding="2dp"
+                app:chipEndPadding="2dp"
+                style="@style/Body"
+                android:textSize="14dp"
+                android:text="CS 124"
+                android:id="@+id/profile_card_1_course_1"/>
+            <com.google.android.material.chip.Chip
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:chipStrokeColor="#725C39"
+                app:chipStrokeWidth="1dp"
+                app:chipStartPadding="2dp"
+                app:chipEndPadding="2dp"
+                style="@style/Body"
+                android:textSize="14dp"
+                android:text="CS 128"
+                android:id="@+id/profile_card_1_course_2"/>
+        </com.google.android.material.chip.ChipGroup>
+    </LinearLayout>
+</com.google.android.material.card.MaterialCardView>

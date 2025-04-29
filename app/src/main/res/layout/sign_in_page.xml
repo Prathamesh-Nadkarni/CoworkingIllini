@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="#FFFDFB">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation = "vertical"
+        android:gravity="center"
+        android:id = "@+id/signup_activity_logo"
+        android:layout_marginBottom="150dp"
+        android:layout_marginTop="150dp">
+        <com.google.android.material.imageview.ShapeableImageView
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_marginBottom="20dp"
+            android:src="@drawable/updated_coworking_logo"
+            android:id = "@+id/signup_activity_logo_image">
+        </com.google.android.material.imageview.ShapeableImageView>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/signup_activity_logo_heading"
+            android:layout_below="@+id/signup_activity_logo_image"
+            android:layout_centerHorizontal = "true"
+            android:layout_marginTop="4dp"
+            android:fontFamily="serif"
+            android:gravity="center"
+            android:text="COWORKING ILLINI"
+            android:textColor="#725C39"
+            android:textFontWeight="700"
+            android:textSize="45dp">
+        </TextView>
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation = "vertical"
+        android:layout_below="@id/signup_activity_logo"
+        android:id = "@+id/signup_activity_button_text"
+        android:gravity="center">
+        <com.google.android.material.button.MaterialButton
+            android:layout_width="350dp"
+            android:layout_height="70dp"
+            android:text="Sign in using your Illinois ID"
+            app:cornerRadius="10dp"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/signup_activity_button"
+            android:textSize="18dp">
+        </com.google.android.material.button.MaterialButton>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_below="@id/signup_activity_button"
+            android:gravity="center">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/signup_activity_no_account_yet"
+                android:text="Don't have an account, "
+                android:textSize="11sp"
+                android:textColor="#90725C39">
+            </TextView>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/signup_activity_sign_up_here"
+                android:text="Sign Up Here!"
+                android:textSize="11sp"
+                android:textColor="#90725C39">
+            </TextView>
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

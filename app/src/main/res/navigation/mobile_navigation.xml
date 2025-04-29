@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_people">
+
+    <fragment
+        android:id="@+id/nav_people"
+        android:name="com.example.coworkingillini.ui.home.HomeFragment"
+        android:label="Study"
+        tools:layout="@layout/fragment_home">
+        <action
+            android:id="@+id/action_sourceFragment_to_invitationsReceivedFragment"
+            app:destination="@id/nav_received" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_chat"
+        android:name="com.example.coworkingillini.ui.dashboard.DashboardFragment"
+        android:label="Matches"
+        tools:layout="@layout/fragment_dashboard" />
+
+    <fragment
+        android:id="@+id/nav_profile"
+        android:name="com.example.coworkingillini.ui.notifications.NotificationsFragment"
+        android:label="Profile"
+        tools:layout="@layout/home_profile_page" />
+
+    <fragment
+        android:id="@+id/nav_sent"
+        android:name="com.example.coworkingillini.ui.invitations_sent.InvitationsSentFragment"
+        android:label="Sent"
+        tools:layout="@layout/invitations_sent" />
+
+    <fragment
+        android:id="@+id/nav_received"
+        android:name="com.example.coworkingillini.ui.invitations_received.InvitationsRecievedFragment"
+        android:label="Received"
+        tools:layout="@layout/invitations_requests" />
+
+</navigation>

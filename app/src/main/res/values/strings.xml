@@ -1,0 +1,57 @@
+<resources>
+    <string name="app_name">Coworking Illini</string>
+    <string name="title_activity_q1_survey">q1_survey</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="title_activity_survey">Survey</string>
+    <string-array name="first_questionnaire_gender_array">
+        <item>Select Gender</item>
+        <item>Male</item>
+        <item>Female</item>
+        <item>Other</item>
+    </string-array>
+    <string-array name="first_questionnaire_education_year_array">
+        <item>Select Education Year</item>
+        <item>Freshman</item>
+        <item>Sophomore</item>
+        <item>Junior</item>
+        <item>Senior</item>
+        <item>Graduate Student</item>
+        <item>PhD Student</item>
+        <item>Postdoc Student</item>
+    </string-array>
+    <string-array name="first_questionnaire_slider_questions_array">
+        <item>How loud do you like your work environment?</item>
+        <item>What is your studying pace?</item>
+        <item>What is your team studying preference?</item>
+        <item>Do you tend to cram last-minute or study early?</item>
+    </string-array>
+    <string-array name="first_questionnaire_slider_questions_left_extreme_array">
+        <item>Silent</item>
+        <item>Unhurried</item>
+        <item>Individual</item>
+        <item>Early</item>
+    </string-array>
+    <string-array name="first_questionnaire_slider_questions_right_extreme_array">
+        <item>Loud</item>
+        <item>Fast</item>
+        <item>Collective</item>
+        <item>Crammer</item>
+    </string-array>
+    <string-array name="first_questionnaire_slider_questions_image">
+        <item>@drawable/volume_up</item>
+        <item>@drawable/directions_run</item>
+        <item>@drawable/groups</item>
+        <item>@drawable/watch_later</item>
+    </string-array>
+    <string-array name="first_questionnaire_courses_goals">
+        <item>Exam Prepper</item>
+        <item>Struggler</item>
+        <item>Answer Checker</item>
+    </string-array>
+
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

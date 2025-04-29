@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/signup_root"
+    android:layout_gravity="center"
+    android:gravity="center"
+    android:background="@color/beige"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="250dp"
+        android:layout_height="60dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:text="Signup"
+        android:fontFamily="sans-serif"
+        android:textSize="30sp"
+        android:gravity="center" />
+
+
+    <TextView
+        android:layout_width="350dp"
+        android:layout_height="100dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:text="Blue Elephant"
+        android:fontFamily="sans-serif-black"
+        android:textSize="40sp"
+        android:id="@+id/usernameText"
+        android:gravity="center"/>
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:id="@+id/regenerate"
+        android:text="Regenerate"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:id="@+id/submit"
+        android:text="Submit"/>
+
+
+</LinearLayout>

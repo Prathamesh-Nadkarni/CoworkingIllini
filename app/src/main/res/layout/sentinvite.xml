@@ -1,0 +1,34 @@
+<RelativeLayout android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+    android:id="@+id/profile_1"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginRight="20dp"
+        android:src="@drawable/profile_icon_on_background"
+        android:id="@+id/profile_icon_1"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Blue Dolphin"
+        android:id="@+id/profile_name_1"
+        android:textSize="20dp"
+        android:textColor="#725C39"
+        android:fontFamily="sans-serif"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@id/profile_icon_1"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/status_accepted"
+        android:background="@drawable/status_background_accepted"
+        android:fontFamily="serif"
+        android:text="Pending"
+        android:textSize="18dp"
+        android:padding="10dp"
+        android:textColor="#FEE8C4"
+        android:layout_alignParentEnd="true"
+        android:gravity="center"/>
+</RelativeLayout>

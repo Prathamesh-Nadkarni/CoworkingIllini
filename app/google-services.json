@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "469398402018",
+    "project_id": "coworking-illini",
+    "storage_bucket": "coworking-illini.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:469398402018:android:0805d4d0f3faf3a27a3fbb",
+        "android_client_info": {
+          "package_name": "com.example.coworkingillini"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "469398402018-dpnmda49bi58kbr4hlqclcl16rib2ses.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD8rjp5fDBD_gpWxkVDK_bbA0jK0UyTc1s"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "469398402018-dpnmda49bi58kbr4hlqclcl16rib2ses.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

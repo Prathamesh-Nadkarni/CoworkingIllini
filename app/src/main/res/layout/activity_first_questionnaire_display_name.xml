@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/first_questionnaire_display_name_root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="32dp"
+    android:orientation="vertical"
+    tools:context=".FirstQuestionnaireDisplayName">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/first_questionnaire_display_name_back_arrow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/first_questionnaire_arrow_back"
+            android:clickable="true"
+            android:focusable="true"
+            app:tint="?attr/colorOnBackground"
+            android:background="?attr/selectableItemBackgroundBorderless"/>
+        <TextView
+            android:id="@+id/first_questionnaire_display_name_heading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="Sign-Up (1/8)"
+            android:textColor="?attr/colorOnBackground"
+            style="@style/Title" />
+    </RelativeLayout >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginTop="90dp"
+        android:layout_marginBottom="48dp">
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="8dp">
+            <TextView
+                android:id="@+id/first_questionnaire_display_name_txtview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Your display name is"
+                android:textColor="?attr/colorOnBackground"
+                style="@style/Body" />
+            <ImageView
+                android:id="@+id/first_questionnaire_display_name_help"
+                android:layout_width="16dp"
+                android:layout_height="16dp"
+                android:layout_alignTop="@id/first_questionnaire_display_name_txtview"
+                android:layout_toEndOf="@id/first_questionnaire_display_name_txtview"
+                android:layout_marginBottom="30dp"
+                app:tint="?attr/colorOnBackground"
+                android:src="@drawable/help_outline" />
+        </RelativeLayout>
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/first_questionnaire_display_name_help_display_name"
+        style="@style/Supertitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="?attr/colorOnBackground"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="90dp"
+        android:text="Your Username"
+        android:textSize="40dp" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="100dp" />
+
+    <Button
+        style="@style/PrimaryColorButton"
+        android:id="@+id/first_questionnaire_display_name_regenerate"
+        android:text="Regenerate"
+        android:layout_marginBottom="14dp"/>
+    <Button
+        style="@style/PrimaryColorButton"
+        android:id="@+id/first_questionnaire_display_name_continue"
+        android:text="Continue" />
+
+</LinearLayout>

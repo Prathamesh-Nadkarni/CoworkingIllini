@@ -1,0 +1,5 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:title="Male" />
+    <item android:title="Female" />
+    <item android:title="Other" />
+</menu>

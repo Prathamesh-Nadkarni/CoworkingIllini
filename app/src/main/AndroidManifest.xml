@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.CoworkingIllini"
+        tools:targetApi="31">
+        <activity
+            android:name=".EditProfile"
+            android:exported="false" />
+        <activity
+            android:name=".Questions"
+            android:exported="false" />
+        <activity
+            android:name=".ChatActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Survey"
+            android:exported="false"
+            android:label="@string/title_activity_survey" />
+        <activity
+            android:name=".SignInActivity"
+            android:exported="false" />
+        <activity
+            android:name=".post_quiz"
+            android:exported="false" />
+        <activity
+            android:name=".Matched_Screen"
+            android:exported="false" />
+        <activity
+            android:name=".Requests"
+            android:exported="false" />
+        <!--
+<activity
+            android:name=".Questions"
+            android:exported="false"
+            android:label="@string/title_activity_q1_survey" />
+        -->
+        <activity
+            android:name=".survey_instructions"
+            android:exported="false" />
+        <activity
+            android:name=".Wait_results"
+            android:exported="false" />
+        <activity
+            android:name=".View_results"
+            android:exported="true" />
+        <activity
+            android:name=".Chat_results"
+            android:exported="false" />
+        <activity
+            android:name=".Chat_screen"
+            android:exported="false" />
+        <!--
+<activity
+            android:name=".match_Chat_Window"
+            android:exported="false" />
+        -->
+        <activity
+            android:name=".ProfileActivity"
+            android:exported="false" />
+        <activity
+            android:name=".SignupActivity"
+            android:exported="false" /> <!-- NICO & ANNIE -->
+        <activity
+            android:name=".FirstQuestionnaireNameAgeGenderActivity"
+            android:exported="false" />
+        <activity
+            android:name=".FirstQuestionnaireSliderQuestionsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".FirstQuestionnaireSkillsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".FirstQuestionnaireCoursesActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
