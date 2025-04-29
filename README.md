@@ -61,10 +61,4 @@ This project was built with the goal of enhancing the academic and social experi
 
 ---
 
-## 📜 License
-
-This project is licensed under the [MIT License](LICENSE).
-
----
-
 *CoworkingIllini — Where Collaboration Meets Comfort.*
